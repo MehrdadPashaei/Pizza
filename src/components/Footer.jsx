@@ -6,7 +6,7 @@ const Footer = () => {
             <div className="socialMedia">
 
             </div>
-            <p> &copy; 2023 summerCamp.com</p>
+            <p> &copy; 2023 <a href=""> Pizza.com</a> </p>
         </div>
 
     );

@@ -8,6 +8,7 @@ import NotFound from "./pages/NotFound.jsx";
 import Footer from "./components/Footer.jsx";
 import Contact from "./pages/Contact.jsx";
 import './App.css'
+import Item from "./components/Item.jsx";
 
 function App() {
   // const [count, setCount] = useState(0)
@@ -21,6 +22,7 @@ function App() {
               <Route path='/menu' element={<Menu/>} />
               <Route path='/contact' element={<Contact/>}/>
               <Route path='*' element={<NotFound/>} />
+              <Route path='/menu/:id' element={<Item/>}/>
           </Routes>
           <Footer/>
       </div>

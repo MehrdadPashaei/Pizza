@@ -1,37 +1,51 @@
 .about {
     width: 100%;
-    height: 90vh;
+    height: 100vh;
     display: flex;
     flex-direction: column;
+    align-items: center;
+
 }
 
 .aboutTop {
-    width: 100%;
-    height: 45%;
+    width: 60%;
+    height: 1000px;
+    border-radius: 8px;
+    margin-top: 20px;
+    background-image: url("../assets/multiplePizzas.jpeg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    font-family: cursive;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.8);
+
 }
 
-.aboutBottom {
+.about-us {
     display: flex;
     flex-direction: column;
-    height: 55%;
+    height: 100%;
     align-items: center;
     margin-top: 50px;
+
 }
 
-.aboutBottom p {
-    width: 1200px;
+.about-us p {
+    padding: 60px;
+    font-size: 1.7rem;
+    font-weight: 500;
+    line-height: 22px;
+    text-align: center;
+    width: 60%;
 }
 
-.about .aboutBottom h1 {
+.about .about-us h1 {
     font-weight: 400;
     font-size: 70px;
     color: black;
     height: 30px;
     display: flex;
+    font-family: cursive;
     justify-content: center;
     transform: translateY(-40px);
 }

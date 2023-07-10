@@ -1,18 +1,27 @@
 import React from "react";
-import PizzaLeft from "../assets/pizzaLeft.jpg";
 import "../styles/Contact.css";
+import {useNavigate} from "react-router-dom";
 
 function Contact() {
+
+    const navigate = useNavigate();
+
+    const handleSubmit = (e) =>{
+        e.preventDefault();
+        navigate("/menu");
+    }
+
+
     return (
         <div className="contact">
             <div
                 className="leftSide"
-                style={{ backgroundImage: `url(${PizzaLeft})` }}
+
             ></div>
             <div className="rightSide">
                 <h1> Contact Us</h1>
 
-                <form id="contact-form" method="POST">
+                <form id="contact-form" method="POST" onSubmit={handleSubmit}>
                     <label htmlFor="name">Full Name</label>
                     <input name="name" placeholder="Enter full name..." type="text" />
                     <label htmlFor="email">Email</label>

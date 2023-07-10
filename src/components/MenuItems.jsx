@@ -1,13 +1,17 @@
 import React from "react";
-import '../styles/Menu.css'
+import '../styles/MenuItems.css'
+import {Link} from "react-router-dom";
 
-function MenuItems ({ image, name, price }) {
+function MenuItems ({id, image, name, price }) {
+
     return (
+        <Link to={`/menu/${id}`}>
         <div className="menuItem">
-            <div style={{ backgroundImage: `url(${image})` }}> </div>
-            <h1> ${name} </h1>
+            <img className='image' src={image} alt="items"/>
+            <h1> {name} </h1>
             <p> ${price} </p>
         </div>
+        </Link>
     );
 }
 
